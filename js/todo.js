@@ -27,7 +27,7 @@ function paintToDo(newTodo) {
   const button = document.createElement("button");
   button.className = "trash-btn";
   const img = document.createElement("img");
-  img.setAttribute("src", "../img/trash-can.svg");
+  img.setAttribute("src", "./img/trash-can.svg");
   img.className = "trash-img";
 
   button.appendChild(img);

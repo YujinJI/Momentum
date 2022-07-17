@@ -27,7 +27,7 @@ function paintGreeting(username) {
   wrap.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerHTML = `
     <span>Welcome, <strong>${username}</strong></span>
-    <button class="logout-btn"><img src="../img/logout.svg" class="logout-img"/></button>
+    <button class="logout-btn"><img src="./img/logout.svg" class="logout-img"/></button>
   `
   const logoutBtn = document.querySelector(".logout-btn");
   logoutBtn.addEventListener("click", onLogoutClick);
