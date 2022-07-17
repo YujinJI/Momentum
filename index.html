@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="what is your name?" class="input-name"/>
+        <input type="submit" value="Log In" class="input-submit"/>
+    </form>
+    <div class="wrap hidden">
+        <div class="header">
+            <div>
+                <div id="greeting"></div>
+                <div id="quote">
+                    <span></span>
+                    <br>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-flex">
+                <div id="location"></div>
+                <div id="clock">00:00:00</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="flex-col">
+                <div id="day-wrap" class="box bg-white">
+                    <p class="day-title">D-day</p>
+                    <form id="day-form">
+                        <input type="text" class="input-day" placeholder="YYYY-MM-DD"/>
+                        <input type="submit" class="submit-day" value="Go"/>
+                    </form>
+                    <p class="output-day"></p>
+                </div>
+                <div id="weather-wrap" class="box bg-white">
+                    <div id="weather">
+                        <p class="weather-icon"></p>
+                        <p class="temp"></p>
+                        <p class="temps"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="todo-wrap" class="box bg-white">
+                <p class="todo-title">Todo</p>
+                <ul id="todo-list"></ul>
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and Press Enter" required />
+                </form>
+            </div>
+            <div id="game-wrap" class="box bg-white">
+                <p class="score">Rock Scissors Paper</p>
+                <div id="score">0 : 0</div>
+                <div class="game-flex">
+                    <div id="user-pick">
+                        <p class="game-title">You</p>
+                        <p class="pick-emoji">✊🏻</p>
+                    </div>
+                    <div class="bar"></div>
+                    <div id="computer-pick">
+                        <p class="game-title">Computer</p>
+                        <p class="pick-emoji">✊🏻</p>
+                    </div>
+                </div>
+                <div class="emoji-wrap">
+                    <button id="rock" class="emoji" value="0">✊🏻</button>
+                    <button id="scissors" class="emoji" value="1">✌🏻</button>
+                    <button id="paper" class="emoji" value="2">✋🏻</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/d_day.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>
