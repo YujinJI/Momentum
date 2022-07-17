@@ -28,7 +28,7 @@ function onGeoOk(position) {
     }
     weather.innerText = `${data.weather[0].main}`;
     temp.innerText = `${data.main.temp}°`;
-    temps.innerText = `${data.main.temp_max}° / ${data.main.temp_min}°`;
+    temps.innerText = `${data.main.temp_min}° / ${data.main.temp_max}°`;
   });
 }
 

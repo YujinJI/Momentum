@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-    padding: 10px 10px 0 10px;
+    padding: 10px;
 }
 .header-flex {
     display: flex;
@@ -50,6 +50,7 @@ body {
 
 #quote {
     margin-top: 5px;
+    margin-left: 10px;
 }
 #quote span {
     color: #333333;
@@ -107,6 +108,7 @@ body {
     min-height: 200px;
     margin-top: 20px;
     border-radius: 9px;
+    width: 250px;
 }
 .day-title {
     text-align: center;
@@ -170,6 +172,7 @@ body {
 #todo-wrap {
     border: 1px solid #0000;
     min-width: 300px;
+    min-height: 500px;
     padding: 0 10px;
     text-align: center;
     position: relative;
@@ -219,12 +222,13 @@ li {
     border: 1px solid #0000;
     border-radius: 9px;
     min-width: 300px;
+    min-height: 500px;
     position: relative;
     padding: 0 10px;
-    min-height: 480px;
 }
 .game-flex {
     display: flex;
+    justify-content: space-around;
     margin-top: 50px;
 }
 #user-pick,
@@ -244,16 +248,12 @@ li {
 }
 .bar {
     width: 1px;
-    margin: auto;
     height: 150px;
     background-color: #66cdaa;
 }
 .emoji-wrap {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    transform: translate(22%);
     text-align: center;
+    margin-top: 50px;
 }
 .emoji {
     background-color: white;
@@ -289,4 +289,19 @@ footer {
     color: white;
     font-family: 'Jua', sans-serif;
     cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+    .flex {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    #todo-wrap,
+    #game-wrap {
+        margin-top: 30px;
+    }
+    #day-wrap,
+    #weather-wrap {
+        margin: 30px auto auto auto;
+    }
 }
