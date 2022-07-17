@@ -298,7 +298,11 @@ footer {
     }
     #todo-wrap,
     #game-wrap {
-        margin-top: 30px;
+        width: 80%;
+        margin: 30px auto auto auto;
+    }
+    #game-wrap {
+        margin-bottom: 30px;
     }
     #day-wrap,
     #weather-wrap {
