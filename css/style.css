@@ -274,9 +274,9 @@ li {
 
 footer {
     position: fixed;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
 }
 
 .changeBg {
