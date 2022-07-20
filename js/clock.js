@@ -2,8 +2,8 @@ const clock = document.querySelector("#clock");
 
 function getClock() {
   const data = new Date();
-  const month = String(data.getMonth()).padStart(2, "0");
-  const day = String(data.getDay()).padStart(2, "0");
+  const month = String(data.getMonth()+1).padStart(2, "0");
+  const day = String(data.getDate()).padStart(2, "0");
   const hours = String(data.getHours()).padStart(2, "0");
   const minutes = String(data.getMinutes()).padStart(2, "0");
 
