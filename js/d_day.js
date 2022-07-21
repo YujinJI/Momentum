@@ -5,7 +5,7 @@ writeDDay = document.querySelector("#day-wrap p:last-child");
 
 function getDiffDay(day) {
   const now = new Date();
-  const goalDay = new Date(`${day} 00:00:00`);
+  const goalDay = new Date(`${day}T00:00:00`);
   const diff = goalDay.getTime() - now.getTime();
 
   const diffDays = Math.floor(diff / (1000*60*60*24));
